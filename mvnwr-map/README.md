@@ -87,7 +87,7 @@ the scale bars stay correct at any size (the "1:42,000" statement applies only a
 Note on unit land status: the refuge unit polygons come from the user's StoryMap layer, with
 their fee / easement / agreement status corrected against the current FWS realty layer and
 FWS hunt units (for example, the Jessenland and Blakeley units are agreement land, not fee
-title). Total shown: 15,134 acres, consistent with FWS's "more than 15,000 acres."
+title). Total shown: 15,135 acres (sum of the rounded unit figures), consistent with FWS's "more than 15,000 acres."
 
 This is not an official U.S. Fish and Wildlife Service publication. Boundaries are approximate.
 

@@ -334,13 +334,13 @@ TIMELINE = [  # from the USFWS refuge "About Us" and home pages (fws.gov/refuge/
     ("1976", "Congress establishes the refuge on October 8 (Public Law 94-466), authorizing an initial "
              "purchase of 9,500 acres."),
     ("1984", "A conservation plan is completed with the State of Minnesota and local partners; the Act is "
-             "amended to allow 2,000 more acres."),
+             "amended to add 2,000 acres."),
     ("1995", "The Mittelstad tract, today's Rapids Lake Unit, is added, bringing the refuge to nearly "
              "14,000 acres."),
     ("2020", "The refuge is designated an urban wildlife refuge and awarded $1 million to strengthen urban "
              "programs."),
-    ("2026", "The refuge marks 50 years with anniversary events. More than 45 miles of trails are open "
-             "daily, 5\u00a0a.m. to 10\u00a0p.m., free of charge."),
+    ("2026", "The refuge marks 50 years with anniversary events. More than 45 miles of free trails are open "
+             "daily, 5\u00a0a.m. to 10\u00a0p.m."),
 ]
 
 
@@ -431,7 +431,7 @@ def locator(pax, F, L, fonts, x, y, w, h):
     upp_l = span_y / (h * 72)
     for txt, lon, lat, sz in [("MINNESOTA", -94.6, 46.35, 14), ("WIS.", -90.6, 45.0, 10), ("IOWA", -94.0, 43.33, 10),
                               ("S.D.", -97.2, 44.3, 10), ("N.D.", -97.6, 47.6, 10), ("MICH.", -87.6, 46.35, 10),
-                              ("CANADA", -94.2, 49.6, 10)]:
+                              ("CANADA", -92.6, 49.3, 10)]:
         from labels import ll
         px, py = ll(lon, lat)
         spaced_text(ax, px, py, txt, fonts.sans(600), sz, tracking=0.25, units_per_pt=upp_l,

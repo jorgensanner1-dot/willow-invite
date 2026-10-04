@@ -250,7 +250,7 @@ TRAIL_LABELS = [
     ("regional_trails", "TrailName", "Minnesota River Greenway", 63.2, 31.35, 12,
      "Minnesota River Greenway", 3.2, S.TRAIL_REGIONAL),
     ("regional_trails", "TrailName", "Big Rivers", 70.1, 38.4, 11, "Big Rivers Trail", 1.5, S.TRAIL_REGIONAL),
-    ("fws_trails", "TRNAME", "River Bottoms Trail", 57.7, 29.8, 12, "River Bottoms Trail", 2.2, S.TRAIL_REFUGE),
+    ("fws_trails", "TRNAME", "River Bottoms Trail", 60.0, 30.0, 12, "River Bottoms Trail", 3.0, S.TRAIL_REFUGE),
 ]
 
 COUNTY_LABELS = [  # (text, page x, page y, rotation)
