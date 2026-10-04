@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+mvnwr-map/output/*_preview.pdf
+mvnwr-map/output/MVNWR_map_p*.pdf
