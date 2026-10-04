@@ -43,7 +43,7 @@ CITY_OVR = {
     "Credit River": dict(page=(56.4, 17.5)),
     "Victoria": dict(page=(33.4, 38.2)),
     "Waconia": dict(page=(25.4, 34.2)),
-    "Cologne": dict(page=(24.2, 27.2), dot=(24.2, 27.8)),
+    "Cologne": dict(page=(24.2, 27.2), dot=(24.98, 27.66)),
     "Norwood Young America": dict(page=(15.0, 27.4), dot=(15.0, 28.0)),
     "Hamburg": dict(page=(11.4, 23.3), dot=(11.4, 23.9)),
     "Green Isle": dict(page=(8.2, 17.9), dot=(8.2, 18.5)),
@@ -92,7 +92,7 @@ UNIT_OVR = {
 # rivers: (gnis name, text, page x, page y, size, offset_pt, tracking, span_in[, color])
 # -------------------------------------------------------------------------
 RIVER_LABELS = [
-    ("Minnesota River", "Minnesota River", 22.9, 12.9, 32, -28, 0.24, 6.0),
+    ("Minnesota River", "Minnesota River", 22.9, 12.9, 32, 22, 0.24, 6.0),
     ("Minnesota River", "Minnesota River", 40.9, 29.9, 32, 24, 0.20, 7.5),
     ("Minnesota River", "Minnesota River", 58.6, 29.6, 32, -30, 0.24, 7.5),
     ("Minnesota River", "Mni Sota Wakpa", 58.6, 29.6, 19, -62, 0.18, 7.5),
@@ -193,7 +193,7 @@ POI_LABELS = [
     dict(text=None, lonlat=(-93.890878, 44.531718), sym="trailhead"),
     dict(text=None, lonlat=(-93.899558, 44.529798), sym="trailhead"),
     # boat launches
-    dict(text=None, lonlat=(-93.288808, 44.801118), sym="boat"),
+    dict(text=None, lonlat=(-93.28690, 44.80045), sym="boat"),
     dict(text="Jens Caspersen Landing", lonlat=(-93.230228, 44.827123), sym="boat", size=11, ha="left"),
     dict(text=None, lonlat=(-93.616561, 44.766706), sym="boat"),
     # refuge historic and natural points

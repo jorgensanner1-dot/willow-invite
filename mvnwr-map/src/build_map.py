@@ -126,8 +126,16 @@ def road_classes(L):
     if e is None or e.empty:
         raise RuntimeError("road edges layer missing")
     e = e[e.geometry.notna()]
-    m = e["MTFCC"]
+    # TIGER tagging fixes found in review: US 52 carriageways mis-coded as S1200 at the MN 55
+    # interchange; dead-end stubs tagged MN 121 / MN 300 / MN 25 (S Meridian St, Belle Plaine);
+    # untagged MN 41 (N Chestnut St, Chaska) and MN 284 (Benton St W, Cologne) edges.
+    m = e["MTFCC"].mask(e["TLID"].isin([649690710, 37970791, 649615214, 649615215, 649690709, 37972004,
+                                        37926454]), "S1100")
     rt = e["TOP_ROUTE_TYPE"].fillna("")
+    rt = rt.mask(e["TLID"].isin([38142561, 38142558, 38142444, 38142445])
+                 | e["TOP_ROUTE"].isin(["MN 121", "MN 300"]), "")
+    rt = rt.mask(e["TLID"].isin([43507282, 43493742, 43493638, 43493636, 43493634, 43508324, 655160965,
+                                 43509201, 43510542]), "MN")
     cls = {}
     cls["local"] = e[m.isin(["S1400", "S1740"]) & (rt == "")]
     cls["county"] = e[m.isin(["S1400", "S1200", "S1640"]) & (rt == "CO")]
